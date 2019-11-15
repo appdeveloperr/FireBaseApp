@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.usmansh.firebaseapp.MainActivity">
+
+
+    <EditText
+        android:hint="name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/name"
+        android:textSize="20dp"/>
+
+    <Button
+        android:text="Sends data"
+        android:id="@+id/sendsdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_below="@+id/address"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/contact1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="contact"
+        android:textSize="20dp"
+        android:layout_below="@+id/name"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:hint="address"
+        android:textSize="20dp"
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/contact1"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+
+    <Button
+        android:id="@+id/retdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/sendsdata"
+        android:layout_alignStart="@+id/sendsdata"
+        android:layout_below="@+id/sendsdata"
+        android:layout_marginTop="30dp"
+        android:text="Retrevie Data" />
+
+    <Button
+        android:id="@+id/loginAct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retdata"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="Login Act" />
+
+    <Button
+        android:id="@+id/uploadbt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/sendsdata"
+        android:layout_marginStart="14dp"
+        android:text="Upload Pic" />
+
+    <Button
+        android:id="@+id/camerabt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/uploadbt"
+        android:layout_alignTop="@+id/retdata"
+        android:text="Camera" />
+
+    <Button
+        android:id="@+id/audioUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/uploadbt"
+        android:layout_alignTop="@+id/loginAct"
+        android:text="Audio Upload" />
+
+</RelativeLayout>
